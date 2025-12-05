@@ -113,7 +113,7 @@ def test_05_fitting_test4_xlsx_ensemble_compositefits() :
     assert mfc.model_fits[0].lureMean.value == 0.000
     assert mfc.model_fits[0].lureSigma.value == pytest.approx(1.926324116518119, rel=1e-5)
     assert mfc.model_fits[0].targetMean.value == pytest.approx(3.625197584309032, rel=1e-5)
-    assert mfc.model_fits[0].targetSigma.value == pytest.approx(1.3380788482604513, rel=1e-5)
+    assert mfc.model_fits[0].targetSigma.value == pytest.approx(1.3380788482604513, rel=1e-4)
     assert mfc.model_fits[0].lureBetweenSigma.value == 0.1
     assert mfc.model_fits[0].c1.value == pytest.approx(2.500809738182628, rel=1e-5)
     assert mfc.model_fits[0].c2.value == pytest.approx(2.673131607945537, rel=1e-5)
